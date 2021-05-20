@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking Text</title>
+</head>
+<body>
+<script>
+  let arr = ['Tôi','là','Tùng','đẹp','trai'];
+  let arr2 = ['Và','dại','gái'];
+  let arrAll = arr.concat(arr2);
+  // let str = 'Tôi là Tùng đẹp trai';
+  // let arrStr = str.split('');
+
+
+  //Thêm sửa xoá
+  //Thêm đầu
+  arrAll.unshift('Xin chào ');
+  //Thêm cuối
+  arrAll.push(', dại luôn cả trai');
+  //Thêm vào vị trí index bất kỳ
+  arrAll.splice(2,0,' muốn',' được');
+
+  //Xoá đầu
+  arrAll.shift();
+  //Xoá cuối
+  arrAll.pop();
+  //Xoá bất kỳ
+  arrAll.splice(5,1);
+
+  document.write(arrAll.join(' '));
+</script>
+</body>
+</html>

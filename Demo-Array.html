@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Array</title>
+</head>
+<body>
+<script>
+
+  // let N = +prompt('Số lượng phần tử:');
+  // let a = []
+  // for (let i = 0; i < N; i++) {
+  //   a[i] = +prompt('Nhập số');
+  // }
+  /*function findMax(a) {
+    let max = a[0];
+    let i = 0;
+    while(i < a.length){
+      if(max < a[i]){
+        max = a[i];
+      }
+      i++;
+    }
+
+    document.write(max);
+  }*/
+
+  // let numbers = [1,2,3,4,5,10];
+  // let numbers2 = [2,100,30,12,15,101];
+  // findMax(numbers2)
+
+  //Các cách khai báo
+  // let arr = [1,1,1,1,1,1,1,1];
+  // let arr2 = new Array(10);
+
+  let students = ['Na','Tuyên','Tùng','Chiến Béo'];
+  // students[students.length] = 'Đạt';
+  // students[students.length] = 'Dũng';
+  // for (let i = students.length; i > 0 ; i--) {
+  //   students[i] = students[i-1];
+  // }
+  // students[-1] = 'Ngọc';
+  let student2 = [
+          ['Na',18,'Long Biên'],
+          ['Tuyên',17,'Bắc Giang'],
+          ['Tùng',40,'Đan Phượng'],
+          ['Chiến béo',10,'Cà Mau']
+  ];
+
+  for (let i = 0; i < student2.length; i++) {
+    // for (let j = 0; j < student2[i].length; j++) {
+    //   document.write(`${student2[i][j]} -`)
+    // }
+    // document.write('<br>');
+    document.write(`Tên là ${student2[i][0]} năm nay ${student2[i][1]} tủi, quê ở ${student2[i][2]} <br>`);
+  }
+</script>
+</body>
+</html>
